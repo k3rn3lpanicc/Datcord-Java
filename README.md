@@ -15,6 +15,7 @@ It uses sqlite3 as its database and stores information in them , it stores passw
 
 ## Notification
 It has a notification popup for incomming messages to inform user.
+![](pic4.png)
 
 ## Call
 Either users can join voice channels , or join Screenshare , or directly call a user in app
