@@ -13,4 +13,4 @@ It uses sqlite3 as its database and stores information in them , it stores passw
 It has a notification popup for incomming messages to inform user.
 
 # Call
-Either users can join voice channels , or join
+Either users can join voice channels , or join Screenshare 
