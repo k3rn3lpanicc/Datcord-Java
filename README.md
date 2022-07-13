@@ -30,7 +30,14 @@ laugh,smile,cry,heart,ok,thumb,fist,angry,tick,cross,moon,twoheart,circle,mouthl
 ```
 ![](pic6.png)
 
+## ScreenShare
+It has a specific channel type for screen sharing users who join this chat will share their screen and others will retrieve their screen.
+
+![](pic7.png)
+
 ## Verification
 It will send an email verification when user tries to signup.
+
+![](pic8.png)
 
 ## Demo Images and videos
