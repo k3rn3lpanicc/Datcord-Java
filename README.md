@@ -11,6 +11,7 @@ the client then decrypts the encrypted key and gets the symmetric key , then all
 
 ## DataStoring
 It uses sqlite3 as its database and stores information in them , it stores passwords in hashed form (sha256).
+![](pic3.png)
 
 ## Notification
 It has a notification popup for incomming messages to inform user.
