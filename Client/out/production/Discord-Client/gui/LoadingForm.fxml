@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Arc?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #1D2345; -fx-border-color: #2849E6; -fx-border-width: 2;" stylesheets="@checkBox.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoadingForm">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="125.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@discord.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="76.0" layoutY="170.0" styleClass="labels" stylesheets="@checkBox.css" text="Datcord is Loading" textFill="RED">
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label fx:id="typed" layoutX="71.0" layoutY="217.0" prefHeight="133.0" prefWidth="254.0" styleClass="labelmini" text="Datcord is a free voice, video, and text chat app that's used by tens of millions of people ages 13+ to talk and hang out with their communities and friends." textAlignment="JUSTIFY" wrapText="true" />
+      <Arc fx:id="arc2" fill="#2849e6" layoutX="30.0" layoutY="70.0" length="90.0" radiusX="80.0" radiusY="80.0" rotate="135.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+      <Arc fx:id="arc1" fill="#2849e6" layoutX="370.0" layoutY="70.0" length="90.0" radiusX="80.0" radiusY="80.0" rotate="-135.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+   </children>
+</Pane>

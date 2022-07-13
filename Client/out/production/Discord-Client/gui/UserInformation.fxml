@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="495.0" prefWidth="300.0" style="-fx-border-color: cyan; -fx-border-width: 0; -fx-background-color: cyan;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UserInformation">
+   <children>
+      <Pane layoutX="1.0" layoutY="1.0" opacity="0.85" prefHeight="493.0" prefWidth="298.0" styleClass="main_fomr" stylesheets="@checkBox.css" />
+      <Pane layoutX="1.0" layoutY="1.0" opacity="0.9" prefHeight="493.0" prefWidth="298.0" style="-fx-background-color: black;" styleClass="lol1">
+         <children>
+            <Label layoutX="22.0" layoutY="336.0" text="&gt;" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Segoe UI" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="394.0" text="\@" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="449.0" text="+" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lUsername" layoutX="58.0" layoutY="342.0" text="k3rn3lpanic" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lemail" layoutX="57.0" layoutY="397.0" text="matin.ghiasvand1381@gmail.com" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lphoneNumber" layoutX="54.0" layoutY="453.0" text="+98 9058253346" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lStat" layoutX="7.0" layoutY="305.0" text="Status : IDLE" textFill="#00ff17">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="Profile" fitHeight="296.0" fitWidth="296.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../ProfilePics/matin.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

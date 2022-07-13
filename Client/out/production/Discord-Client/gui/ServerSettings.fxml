@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServerSettings">
+   <children>
+      <Pane opacity="0.85" prefHeight="640.0" prefWidth="960.0" styleClass="main_fomr" stylesheets="@checkBox.css" />
+      <Pane opacity="0.92" prefHeight="640.0" prefWidth="960.0" style="-fx-background-color: black; -fx-border-color: #2849E6; -fx-border-width: 3;" styleClass="lol1" stylesheets="@checkBox.css" />
+      <Pane onMouseDragged="#drg" onMousePressed="#mousePressed" prefHeight="39.0" prefWidth="960.0" style="-fx-background-color: #2849E6;">
+         <children>
+            <Label layoutX="14.0" layoutY="8.0" text="Datcord &gt; Server Settings" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="934.0" layoutY="8.0" onMouseClicked="#exit" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="29.0" layoutY="68.0" maxWidth="860.0" text="Change Datcord Server settings, you can add/remove users and add/remove channels and chats to/from Server." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="accept" disable="true" layoutX="244.0" layoutY="4.0" onMouseClicked="#accept" text="✅" textFill="#1fff00">
+               <font>
+                  <Font name="Segoe UI" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="deleteServer" layoutX="834.0" layoutY="608.0" onMouseClicked="#exit" text="Delete Server" textFill="RED" underline="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="13.0" layoutY="140.0" prefHeight="483.0" prefWidth="320.0" style="-fx-border-color: gray;">
+         <children>
+            <Pane layoutX="8.0" layoutY="153.0" prefHeight="325.0" prefWidth="304.0" style="-fx-border-color: #2849E6; -fx-border-width: 2;">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" layoutY="2.0" prefHeight="321.0" prefWidth="300.0" styleClass="chats-scrollPane2" stylesheets="@checkBox.css" vbarPolicy="ALWAYS">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="295.0" styleClass="chats-scrollPane2-anchorpane">
+                           <children>
+                              <VBox fx:id="usersBox" prefWidth="287.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Label layoutX="235.0" layoutY="4.0" onMouseClicked="#search" text="🔎" textFill="#2849e6">
+               <font>
+                  <Font name="Segoe UI" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <TextField fx:id="username" layoutX="32.0" prefHeight="38.0" prefWidth="187.0" promptText="username" styleClass="textField2" stylesheets="@checkBox.css" />
+            <Pane fx:id="prevPane" layoutX="29.0" layoutY="63.0" prefHeight="78.0" prefWidth="233.0" style="-fx-border-color: #2849E6;">
+               <children>
+                  <ImageView fx:id="imageprev" fitHeight="45.0" fitWidth="45.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../ProfilePics/matin.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nameprev" layoutX="69.0" layoutY="30.0" maxWidth="112.0" text="k3rn3lpanic" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="addprev" disable="true" layoutX="196.0" layoutY="22.0" onMouseClicked="#accept" text="✅" textFill="#1fff00">
+                     <font>
+                        <Font name="Segoe UI" size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <TextField fx:id="chatName" layoutX="380.0" layoutY="140.0" prefHeight="38.0" prefWidth="267.0" promptText="chatName" styleClass="textField2" stylesheets="@checkBox.css" />
+      <Label fx:id="addprev1" layoutX="680.0" layoutY="140.0" onMouseClicked="#accept" text="✅" textFill="#1fff00">
+         <font>
+            <Font name="Segoe UI" size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ChoiceBox fx:id="choices" layoutX="380.0" layoutY="200.0" prefHeight="25.0" prefWidth="113.0" stylesheets="@checkBox.css" />
+   </children>
+</AnchorPane>

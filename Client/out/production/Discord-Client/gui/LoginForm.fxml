@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="1177.0" style="-fx-background-color: #1D2345;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+   <children>
+      <Pane fx:id="SignInPane" layoutX="616.0" layoutY="57.0" prefHeight="643.0" prefWidth="538.0">
+         <children>
+            <TextField fx:id="login_username" alignment="CENTER" layoutX="98.0" layoutY="178.0" prefHeight="44.0" prefWidth="338.0" promptText="Username/Email" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #2E3971 transparent; -fx-text-inner-color: #2849E6; -fx-prompt-text-fill: #2849E6;">
+               <font>
+                  <Font name="Segoe UI Italic" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="login_password" alignment="CENTER" layoutX="98.0" layoutY="282.0" prefHeight="44.0" prefWidth="338.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: transparent transparent #2E3971 transparent; -fx-text-inner-color: #2849E6; -fx-prompt-text-fill: #2849E6;">
+               <font>
+                  <Font name="Segoe UI Italic" size="19.0" />
+               </font>
+            </TextField>
+            <Label layoutX="214.0" layoutY="30.0" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="36.0" />
+               </font>
+               <effect>
+                  <Glow level="0.39" />
+               </effect>
+            </Label>
+            <Button layoutX="113.0" layoutY="503.0" mnemonicParsing="false" onAction="#login" prefHeight="51.0" prefWidth="326.0" styleClass="loginButton" stylesheets="@checkBox.css" text="LOGIN">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="144.0" layoutY="589.0" text="Not a member yet?" textFill="#2849e6">
+               <font>
+                  <Font name="Segoe UI Italic" size="17.0" />
+               </font>
+               <effect>
+                  <Glow level="0.11" />
+               </effect>
+            </Label>
+            <Label fx:id="SignUp" layoutX="296.0" layoutY="589.0" onMouseClicked="#bringSignUpMenu" onTouchPressed="#bringSignUpMenu" styleClass="clickableLabel" stylesheets="@checkBox.css" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+               <effect>
+                  <Glow level="0.46" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="320.0" layoutY="396.0" styleClass="clickableLabel" stylesheets="@checkBox.css" text="Forgot Password?" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.25" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <CheckBox fx:id="stayLogedIn" layoutX="98.0" layoutY="395.0" mnemonicParsing="false" style="-fx-background-color: #1D2345;" styleClass="box" stylesheets="@checkBox.css" text="Stay Logged in" textFill="#2849e6">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </Pane>
+      <Pane fx:id="SignUpPane" layoutX="616.0" layoutY="57.0" prefHeight="643.0" prefWidth="538.0" visible="false">
+         <children>
+            <TextField fx:id="uUsername" alignment="CENTER" layoutX="99.0" layoutY="111.0" prefHeight="44.0" prefWidth="338.0" promptText="Username" styleClass="textField" stylesheets="@checkBox.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="uEmail" alignment="CENTER" layoutX="99.0" layoutY="211.0" prefHeight="44.0" prefWidth="338.0" promptText="Email" styleClass="textField" stylesheets="@checkBox.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="uPassword" alignment="TOP_LEFT" layoutX="99.0" layoutY="311.0" onKeyTyped="#checkPasswordVerify" prefHeight="38.0" prefWidth="396.0" promptText="Password" styleClass="textField" stylesheets="@checkBox.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="uPassword2" alignment="TOP_LEFT" layoutX="99.0" layoutY="411.0" onKeyTyped="#checkPasswordVerify" prefHeight="38.0" prefWidth="396.0" promptText="Password Verify" styleClass="textField" stylesheets="@checkBox.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="206.0" layoutY="29.0" text="SIGNUP" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="36.0" />
+               </font>
+               <effect>
+                  <Glow level="0.39" />
+               </effect>
+            </Label>
+            <Button fx:id="signupButton" disable="true" layoutX="111.0" layoutY="503.0" mnemonicParsing="false" onAction="#signUp" prefHeight="51.0" prefWidth="326.0" styleClass="loginButton" stylesheets="@checkBox.css" text="SIGNUP">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="133.0" layoutY="582.0" text="You have an account?" textAlignment="CENTER" textFill="#2849e6">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.25" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="SignIn" layoutX="287.0" layoutY="580.0" onMouseClicked="#bringSignInMenu" onTouchPressed="#bringSignInMenu" styleClass="clickableLabel" stylesheets="@checkBox.css" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+               <effect>
+                  <Glow level="0.46" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <CheckBox layoutX="452.0" layoutY="314.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="71.0" stylesheets="@checkBox.css" text="Show" textFill="#2849e6" />
+            <CheckBox layoutX="452.0" layoutY="417.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="71.0" stylesheets="@checkBox.css" text="Show" textFill="#2849e6" />
+         </children>
+      </Pane>
+      <Pane prefHeight="729.0" prefWidth="589.0" style="-fx-background-color: #2849E6;">
+         <children>
+            <ImageView fitHeight="251.0" fitWidth="305.0" layoutX="169.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@discord.png" />
+               </image>
+               <effect>
+                  <Glow level="0.0" />
+               </effect>
+            </ImageView>
+            <Label layoutX="184.0" layoutY="282.0" text="Datcord Client" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="36.0" />
+               </font>
+               <effect>
+                  <Glow level="0.39" />
+               </effect>
+            </Label>
+            <Label layoutX="93.0" layoutY="374.0" prefHeight="226.0" prefWidth="403.0" text="Datcord is a free voice, video, and text chat app that's used by tens of millions of people ages 13+ to talk and hang out with their communities and friends. People use Datcord daily to talk about many things, ranging from art projects and family trips to homework and mental health support." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="21.0" />
+               </font>
+               <effect>
+                  <Glow level="0.24" />
+               </effect>
+            </Label>
+            <Button layoutX="507.0" layoutY="17.0" mnemonicParsing="false" onAction="#Call" prefHeight="51.0" prefWidth="71.0" styleClass="loginButton" stylesheets="@checkBox.css" text="Call">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane fx:id="VerifyPane" layoutX="616.0" layoutY="57.0" prefHeight="643.0" prefWidth="538.0" visible="false">
+         <children>
+            <TextField fx:id="verificationCode" alignment="CENTER" layoutX="99.0" layoutY="262.0" prefHeight="44.0" prefWidth="338.0" promptText="VerificationCode" styleClass="textField" stylesheets="@checkBox.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="217.0" layoutY="29.0" text="VERIFY" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="36.0" />
+               </font>
+               <effect>
+                  <Glow level="0.39" />
+               </effect>
+            </Label>
+            <Button layoutX="111.0" layoutY="343.0" mnemonicParsing="false" onAction="#verifyAccount" prefHeight="51.0" prefWidth="326.0" styleClass="loginButton" stylesheets="@checkBox.css" text="VERIFY">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="133.0" layoutY="411.0" text="Wrong Credentials ?" textAlignment="CENTER" textFill="#2849e6">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.25" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="287.0" layoutY="409.0" onMouseClicked="#bringBackToSignUpMenu" onTouchPressed="#bringSignInMenu" styleClass="clickableLabel" stylesheets="@checkBox.css" text="Return" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+               <effect>
+                  <Glow level="0.46" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="72.0" layoutY="77.0" prefHeight="158.0" prefWidth="391.0" text="We have sent a verification code to your email address, please check your email and enter the code below to continue" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="21.0" />
+               </font>
+               <effect>
+                  <Glow level="0.24" />
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
