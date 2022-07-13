@@ -28,6 +28,7 @@ List of emoji names :
 ```bash
 laugh,smile,cry,heart,ok,thumb,fist,angry,tick,cross,moon,twoheart,circle,mouthless,tree,square,fire,hundred,star,poop,pointright,pointleft,pointdown,pointup,eyes,rose,palm,hearteyes,sparkles,plus,minus,divide,snowflake,pencil,victoryhand,airplane,mail,questionmark,rocket,ambulance,nosmoking,bike,walking,houglass,tickbox,recycle,anchor,soccerball,baseball,sunbehindcloud,noentry,church,tent,wave,volcano,earth,glowingstar,apple,hamburger,birthdaycake,dart,dice,chick,penguin,thumbsdown,clappinghands,gem,sparklingheart,growingheart,pushpin,telephone,lock,linkchain,underage,pokerface,suprisedface,shower
 ```
+![](pic6.png)
 
 ## Verification
 It will send an email verification when user tries to signup.
