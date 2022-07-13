@@ -18,6 +18,6 @@ Either users can join voice channels , or join Screenshare , or directly call a 
 # Emojies
 It supports 80 different emojies and users can send them either from the emoji box , or use the style ":emojiname:"
 List of emoji names : 
-```java  
+```python 
 laugh,smile,cry,heart,ok,thumb,fist,angry,tick,cross,moon,twoheart,circle,mouthless,tree,square,fire,hundred,star,poop,pointright,pointleft,pointdown,pointup,eyes,rose,palm,hearteyes,sparkles,plus,minus,divide,snowflake,pencil,victoryhand,airplane,mail,questionmark,rocket,ambulance,nosmoking,bike,walking,houglass,tickbox,recycle,anchor,soccerball,baseball,sunbehindcloud,noentry,church,tent,wave,volcano,earth,glowingstar,apple,hamburger,birthdaycake,dart,dice,chick,penguin,thumbsdown,clappinghands,gem,sparklingheart,growingheart,pushpin,telephone,lock,linkchain,underage,pokerface,suprisedface,shower
 ```
