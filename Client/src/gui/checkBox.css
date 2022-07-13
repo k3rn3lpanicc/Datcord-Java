@@ -1,0 +1,340 @@
+.check-box{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 15px;
+}
+.check-box .box {
+    -fx-background-color:  #1D2345;
+    -fx-border-color:  #2849E6;
+    -fx-border-radius: 5;
+}
+.check-box .mark {
+    -fx-shape: "M1.73,12.91 8.1,19.28 22.79,4.59 22.79,1.59 8.1,16.28 1.73,9.91";
+}
+.check-box:selected .mark {
+    -fx-background-color:  #2849E6;
+}
+.check-box:selected .box {
+    -fx-background-color:  #1D2345;
+}
+.loginButton{
+    -fx-background-color : #2849e6;
+    -fx-text-fill :  white;
+    -fx-border-radius: 30;
+    -fx-background-radius : 30;
+}
+.loginButton:hover {
+    -fx-background-color: #1435b4;
+}
+.loginButton:pressed{
+    -fx-background-color: #2849b4;
+}
+.clickableLabel{
+    -fx-text-fill: white;
+}
+.clickableLabel:hover{
+    -fx-text-fill:  #2849E6;
+}
+.clickableLabel:pressed{
+    -fx-text-fill: white;
+}
+.textField {
+    -fx-background-color: transparent;
+    -fx-border-color :  transparent transparent #2E3971 transparent;
+    -fx-text-inner-color:  #2849E6;
+    -fx-prompt-text-fill:  #2849E6;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 19px;
+    -fx-font-style: Italic;
+    -fx-pref-width: 338;
+    -fx-alignment: CENTER;
+}
+.textField2 {
+    -fx-background-color: transparent;
+    -fx-border-color :  transparent transparent #2E3971 transparent;
+    -fx-text-inner-color:  #2849E6;
+    -fx-prompt-text-fill:  #2849E6;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 19px;
+    -fx-font-style: Italic;
+    -fx-alignment: CENTER;
+}
+.callButtonAccept{
+    -fx-background-radius: 80;
+    -fx-pref-width: 115;
+    -fx-pref-height: 60;
+    -fx-background-color: #09e080;
+    -fx-border-width: 0;
+}
+.callButtonAccept:hover{
+    -fx-background-color: #1d915a;
+}
+.callButtonAccept:pressed{
+    -fx-background-color: #08d279;
+}
+.callReject{
+    -fx-background-radius: 80;
+    -fx-pref-width: 115;
+    -fx-pref-height: 60;
+    -fx-background-color: #ff0000;
+    -fx-border-radius: 80;
+    -fx-border-width: 0;
+}
+.callReject2{
+    -fx-background-radius: 80;
+    -fx-pref-height: 60;
+    -fx-background-color: #ff0000;
+    -fx-border-radius: 80;
+    -fx-border-width: 0;
+}
+.callReject:hover{
+    -fx-background-color: #8f1313;
+}
+.callReject:pressed{
+    -fx-background-color: #e50505;
+}
+.callReject2:hover{
+    -fx-background-color: #8f1313;
+}
+.callReject2:pressed{
+    -fx-background-color: #e50505;
+}
+.callBackPane{
+    -fx-background-image: url("phoneBack/back.png");
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+}
+.labels{
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 30px;
+}
+.labelmini{
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 18px;
+}
+.labelmedium{
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 22px;
+}
+.labelmini2{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 18px;
+}
+.zirbutton{
+    -fx-border-radius: 120;
+    -fx-background-radius: 120;
+    -fx-pref-width: 70;
+    -fx-pref-height: 70;
+    -fx-background-color: white;
+    -fx-opacity: 0.22;
+}
+.zirbutton:hover{
+    -fx-opacity: 0.4;
+}
+.zirbutton:pressed{
+    -fx-opacity: 0.3;
+}
+.scroll-bar{
+    -fx-background-color:  #202642;
+}
+.scroll-bar:vertical{
+    -fx-background-color: #202642;
+    -fx-pref-width: 9;
+}
+.scroll-bar:vertical *.thumb{
+    -fx-background-color:  #2849E6;
+    -fx-background-radius: 200;
+    -fx-border-radius: 200;
+}
+.main_fomr{
+    -fx-background-image: url("phoneBack/main.jpg");
+    -fx-background-size: 1625px;
+}
+.transparent-field{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.lol1{
+    -fx-border-color: #515151;
+}
+.cancelButton{
+    -fx-background-color:transparent;
+    -fx-border-color: cyan;
+    -fx-border-radius: 10;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI";
+    -fx-border-width: 1;
+    -fx-font-size: 12;
+    -fx-pref-width: 34;
+    -fx-pref-height: 20;
+}
+.cancelButton:hover{
+    -fx-background-color:gray;
+}
+.cancelButton:pressed{
+    -fx-background-color:transparent;
+}
+.discordLogoButton{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-border-width: 1;
+    -fx-border-color: cyan;
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+    -fx-background-color: transparent;
+    -fx-background-image: url("disc2.png");
+    -fx-background-size: 50;
+}
+.textbox{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 16px;
+}
+.addButton{
+    -fx-background-color: transparent;
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+    -fx-border-color: #949696;
+    -fx-background-radius: 25;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13;
+    -fx-text-fill: white;
+}
+.microphoneButton{
+    -fx-background-color: transparent;
+    -fx-border-radius: 25;
+    -fx-border-color: #949696;
+    -fx-border-width: 2;
+    -fx-background-radius: 25;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13;
+    -fx-text-fill: white;
+}
+.scrolitem{
+    -fx-background-radius: 45;
+    -fx-border-radius: 45;
+    -fx-border-width: 1;
+    -fx-border-color: cyan;
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+    -fx-background-color: transparent;
+    -fx-background-size: 50;
+}
+.chats-scrollPane{
+    -fx-background-color: transparent;
+}
+.chats-scrollPane > .viewport{
+    -fx-background-color: black;
+}
+.chats-scrollPane:vertical{
+    -fx-border-color: red;
+}
+.chats-scrollPane-anchorpane{
+    -fx-background-color: transparent;
+}
+.chats-scrollPane2{
+    -fx-background-color: transparent;
+}
+.chats-scrollPane2 > .viewport{
+    -fx-background-color: transparent;
+}
+.chats-scrollPane2-anchorpane{
+    -fx-background-color: transparent;
+}
+.progressBar{
+    -fx-border-width: 1;
+    -fx-border-color: #1d2345;
+    -fx-border-radius: 10;
+}
+.progressBar .bar{
+    -fx-background-color: linear-gradient(to right , #003e3e, cyan);
+
+    -fx-background-radius: 10;
+}
+.progressBar .track{
+    -fx-background-color: transparent;
+
+    -fx-border-radius: 10;
+}
+.textArea{
+    -fx-background-color: black;
+}
+.textArea .content{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+
+}
+
+
+.gridpane{
+
+}
+.gridpane Line{
+    -fx-stroke: linear-gradient(to right , #b1b1b1, #e9e9e9);
+}
+
+.addButton2{
+    -fx-background-color: black;
+    -fx-border-color: gray;
+}
+.addButton2:hover{
+    -fx-background-color: #4a4a4a;
+}
+.addButton2:pressed{
+    -fx-background-color: #323232;
+}
+
+.friendShipButton{
+    -fx-border-color: lime;
+    -fx-border-radius: 30;
+}
+.friendShipButton:hover{
+    -fx-border-radius: 30;
+    -fx-border-color: lime;
+    -fx-background-color: #005400;
+    -fx-background-radius: 30;
+}
+.friendShipButton:pressed{
+    -fx-background-color: #002100;
+}
+.rejectButton{
+    -fx-border-color: red;
+    -fx-border-radius: 30;
+}
+.rejectButton:hover{
+    -fx-border-radius: 30;
+    -fx-border-color: red;
+    -fx-background-color: #540000;
+    -fx-background-radius: 30;
+}
+.rejectButton:pressed{
+    -fx-background-color: #260000;
+}
+.chats-scrollPane3{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent gray transparent;
+}
+.chats-scrollPane3 > .viewport{
+    -fx-background-color: transparent;
+}
+.chats-scrollPane3-anchorpane{
+    -fx-background-color: transparent;
+}
+
+.choice-box .context-menu { -fx-background-color: black;
+-fx-border-color:  #2849E6;}
+.choice-box .menu-item:focused { -fx-background-color:  #2849E6; }
+.choice-box .menu-item > .label { -fx-text-fill: white; }
+.choice-box .menu-item:focused > .label { -fx-text-fill: black; }
+.choice-box {
+    -fx-background-color: black;
+    -fx-mark-color:  #2849E6;
+    -fx-border-color:  #2849E6;
+}
+.choice-box > .label { -fx-text-fill: white; }

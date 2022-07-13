@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="878.0" prefWidth="206.0" style="-fx-background-color: black; -fx-border-color: cyan;" styleClass="main_fomr" stylesheets="@checkBox.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DownloadManager">
+   <children>
+      <Pane layoutX="1.0" layoutY="2.0" onMouseDragged="#drg" onMousePressed="#mousePressed" opacity="0.92" prefHeight="874.0" prefWidth="206.0" style="-fx-background-color: black; -fx-border-width: 1 0 0 1;" styleClass="lol1" />
+      <Pane fx:id="example" prefHeight="90.0" prefWidth="196.0" style="-fx-border-color: #2849E6; -fx-border-width: 0 1 2 1;" visible="false">
+         <children>
+            <ProgressBar fx:id="barExample" layoutX="8.0" layoutY="63.0" prefHeight="13.0" prefWidth="168.0" progress="0.65" styleClass="progressBar" stylesheets="@checkBox.css" />
+            <Label fx:id="fileNameExample" layoutX="13.0" layoutY="10.0" text="matin.jpg" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="33.0" text="Downloading" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ScrollPane fx:id="panee" hbarPolicy="NEVER" layoutY="52.0" prefHeight="826.0" prefWidth="206.0" style="-fx-border-color: cyan;" styleClass="chats-scrollPane2" stylesheets="@checkBox.css" vbarPolicy="ALWAYS">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="197.0">
+               <children>
+                  <VBox fx:id="vbb" prefWidth="193.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label fx:id="fileNameExample1" layoutX="15.0" layoutY="18.0" mouseTransparent="true" text="Download / Upload List" textFill="#00e3ff">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
