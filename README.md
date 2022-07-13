@@ -39,5 +39,3 @@ It has a specific channel type for screen sharing users who join this chat will 
 It will send an email verification when user tries to signup.
 
 ![](pic8.png)
-
-## Demo Images and videos
