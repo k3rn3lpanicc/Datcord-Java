@@ -20,6 +20,7 @@ It has a notification popup for incomming messages to inform user.
 
 ## Call
 Either users can join voice channels , or join Screenshare , or directly call a user in app
+![](pic5.png)
 
 ## Emojies
 It supports 80 different emojies and users can send them either from the emoji box , or use the style ":emojiname:"
